@@ -1,0 +1,6 @@
+options:
+  cidr:
+    type: string
+    default: "10.244.0.0/16"
+    description: |
+      The flannel cidr

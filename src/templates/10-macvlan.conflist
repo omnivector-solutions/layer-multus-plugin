@@ -1,0 +1,19 @@
+{  
+   "name":"juju-macvlan-network",
+   "cniVersion": "0.3.1",
+   "plugins":[
+      {  
+         "type":"bridge",
+         "bridge":"{{interfacename}}",
+         "isGateway":false,
+         "isDefaultGateway":false,
+         "forceAddress":false,
+         "ipMasq":true,
+         "mtu":1400,
+         "hairpinMode":false,
+         "ipam":{
+            "type":"dhcp"
+         }
+      }
+   ]
+}

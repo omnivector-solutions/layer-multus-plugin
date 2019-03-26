@@ -1,0 +1,18 @@
+name: multus-plugin
+summary: CNI multus plugin for K8S
+maintainers:
+  - James Beedy <jamesbeedy@gmail.com>
+description: |
+  Configures the CNI multus plugin.
+  For use with CDK on bare metal.
+tags:
+  - networking
+  - multus
+subordinate: true
+series:
+  - xenial
+  - bionic
+requires:
+  cni:
+    interface: kubernetes-cni
+    scope: container
